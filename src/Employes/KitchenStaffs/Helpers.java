@@ -1,16 +1,15 @@
 package Employes.KitchenStaffs;
 
 import Employes.Employees;
-import Util.MyRandom;
 
-import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 import static Util.MyRandom.randomNumberBetween;
 
 public class Helpers extends Employees {
 
-    private Map<String, Integer> helperHand;
+    private Map<String, Integer> helperHand = new HashMap<>();
     private String[] ingredients = new String[] {"carrot", "potato", "meat"};
 
         public Helpers(String name, String dob, double salary) {
@@ -26,4 +25,8 @@ public class Helpers extends Employees {
         void addIngredients(String ingredient ) {
             helperHand.put(ingredient, randomNumberBetween(0,3));
         }
+
+    public Map<String, Integer> getHelperHand() {
+        return helperHand;
     }
+}
