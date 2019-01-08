@@ -11,19 +11,19 @@ import static Util.MyRandom.*;
 
 public class WorkingInKitchen {
 
-    private List<Employees> staffs = new ArrayList<Employees>();
+    private List<Employees> staffs = new ArrayList<>();
     private boolean ChefIsCooking;
 
 
-    public void setChefIsCooking(boolean chefCooking) {
+    private void setChefIsCooking(boolean chefCooking) {
         ChefIsCooking = chefCooking;
     }
 
-    public boolean isChefIsCooking() {
+    private boolean isChefIsCooking() {
         return ChefIsCooking;
     }
 
-    public void employEmployees(Employees employees) {
+    private void employEmployees(Employees employees) {
         staffs.add(employees);
 
     }
