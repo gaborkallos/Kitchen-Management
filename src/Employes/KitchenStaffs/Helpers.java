@@ -13,7 +13,7 @@ public class Helpers extends Employees {
     private Map<String, Integer> helperHand;
     private String[] ingredients = new String[] {"carrot", "potato", "meat"};
 
-        public Helpers(String name, Date dob, double salary) {
+        public Helpers(String name, String dob, double salary) {
             super.setName(name);
             super.setDob(dob);
             super.setSalary(salary);

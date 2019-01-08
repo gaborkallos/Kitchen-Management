@@ -1,10 +1,13 @@
 package Employes;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.Locale;
 
 public class Employees {
     private String name;
-    private Date dob;
+    private LocalDate dob;
     private double salary;
     private double tax;
 
@@ -12,8 +15,10 @@ public class Employees {
         this.name = name;
     }
 
-    public void setDob(Date dob) {
-        this.dob = dob;
+    public void setDob(String dob) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH);
+        LocalDate date = LocalDate.parse(dob, formatter);
+        this.dob = date;
     }
 
     public void setSalary(double salary) {
