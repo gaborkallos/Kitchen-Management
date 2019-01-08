@@ -5,8 +5,9 @@ import Employes.CanCook;
 
 public class Chef extends CanCook {
 
-    public Chef(String name, String dob, double salary) {
+    private boolean isCooking = false;
 
+    public Chef(String name, String dob, double salary) {
         super.setName(name);
         super.setDob(dob);
         super.setSalary(salary);
@@ -14,5 +15,11 @@ public class Chef extends CanCook {
         super.setHasKnife(true);
     }
 
+    public void setCooking(boolean cooking) {
+        isCooking = cooking;
+    }
 
+    public boolean isCooking() {
+        return isCooking;
+    }
 }
