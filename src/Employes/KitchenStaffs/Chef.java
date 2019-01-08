@@ -1,22 +1,19 @@
 package Employes.KitchenStaffs;
 
+import Employes.CanCook;
 import Employes.Employees;
 
-public class Chef extends Employees implements Cooking, HasKnife{
+import java.util.Date;
 
-    @Override
-    public void cooking() {
+public class Chef extends CanCook {
 
-
+    public Chef(String name, Date dob, double salary) {
+        super.setName(name);
+        super.setDob(dob);
+        super.setSalary(salary);
+        super.setTax(salary * 0.01);
+        super.setHasKnife(true);
     }
 
-    @Override
-    public void setHasKnife() {
 
-    }
-
-    @Override
-    public void getHAsKnife() {
-
-    }
 }
