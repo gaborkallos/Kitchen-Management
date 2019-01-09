@@ -1,9 +1,7 @@
 package Employes.KitchenStaffs;
 
 import Employes.CanCook;
-import Employes.Employees;
 
-import java.util.Date;
 
 public class Cooks extends CanCook {
 

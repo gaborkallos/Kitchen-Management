@@ -1,11 +1,10 @@
 package Employes.KitchenStaffs;
 
 import Employes.Employees;
+import static Util.MyRandom.randomNumberBetween;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static Util.MyRandom.randomNumberBetween;
 
 public class Helpers extends Employees {
 

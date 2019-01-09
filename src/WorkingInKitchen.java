@@ -1,7 +1,6 @@
 import Employes.Employees;
 import Employes.KitchenStaffs.Chef;
 import Employes.KitchenStaffs.Helpers;
-import com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
 
 import java.util.*;
 
@@ -62,11 +61,10 @@ public class WorkingInKitchen {
                             ((Helpers) staff).getHelperHand().get(requiredIngredient) + " " +
                             requiredIngredient + "\u001B[0m");
                 }
-
             }
-
         }
     }
+
 
     private void ChefCooking() {
         for (Employees staff : staffs) {
