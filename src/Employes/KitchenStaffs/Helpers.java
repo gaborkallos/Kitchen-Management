@@ -22,7 +22,7 @@ public class Helpers extends Employees {
             }
         }
 
-        void addIngredients(String ingredient ) {
+        public void addIngredients(String ingredient ) {
             helperHand.put(ingredient, randomNumberBetween(0,3));
         }
 

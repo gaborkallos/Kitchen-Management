@@ -28,4 +28,8 @@ public class Employees {
     public void setTax(double tax) {
         this.tax = tax;
     }
+
+    public String getName() {
+        return name;
+    }
 }
